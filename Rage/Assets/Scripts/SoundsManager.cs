@@ -5,7 +5,9 @@ using UnityEngine;
 public class SoundsManager : MonoBehaviour {
 
 	private GameObject crowlerSpeaker;
-	private GameObject 
+	private GameObject oppressorSpeaker;
+	private GameObject drednaughtSpeaker;
+	private GameObject heroSpeaker;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +16,10 @@ public class SoundsManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+	}
+
+	public void Play(string space, string name) {
 		
 	}
 }

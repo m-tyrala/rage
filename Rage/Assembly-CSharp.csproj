@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Mada.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\SoundsManager.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>

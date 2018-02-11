@@ -65,7 +65,7 @@ public abstract class Enemy : MonoBehaviour {
 	public bool decreaseHealth(int hit) {
 		health = health - hit;
 		//var bloodNode = bloodClass.new(Color("2a9609"), Color("083502"), turn)
-		GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play(kind + "/" + kind);
+		GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play(kind, kind);
 		//TODO destroy on
 		return health > 0;
 	}
@@ -85,7 +85,7 @@ public abstract class Enemy : MonoBehaviour {
 		else {
 			if (Time.time - lastAttackTimeStamp > attackSpeed && mada.GetComponent<Mada>().GetHealth() <= 0) {
 				lastAttackTimeStamp = Time.time;
-				GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play(kind + "/" + kind);
+				GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play(kind, kind);
 				mada.GetComponent<Mada>().TakeDamage();
 			}
 		}

@@ -23,10 +23,10 @@ public class Mada : MonoBehaviour {
 		//TODO: blood Color("dd0404"), Color("590303")
 		health = health - 1;
 		if (health > 0) {
-			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero/gethit");
+			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero", "gethit");
 			return false;
 		} else {
-			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero/die");
+			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero", "die");
 			return true;
 		}
 	}
@@ -38,7 +38,7 @@ public class Mada : MonoBehaviour {
 			}
 			lastAttackTimeStamp = Time.time;
 
-			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero/hit");
+			GameObject.Find("/Sounds/SoundsManager").GetComponent<SoundsManager>().Play("hero", "hit");
 			
 			return true;
 		}
